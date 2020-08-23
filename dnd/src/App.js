@@ -6,7 +6,6 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-            <p>hullo</p>
             <BrowserRouter>
                   <Switch>
                         <Route exact route="/" component={Wizard}/>
