@@ -3,23 +3,31 @@
     margin: auto 50px;
 }
 
-.SkillTable table{
+.CharacterStats{
     display:flex;
- }
+}
 
-.SkillHead tr{
+.SkillTable table, .SavingThrowsTable table, .MainTable table{
+    display:flex;
+
+}
+
+.SkillHead tr, .SavingThrowsHead tr, .MainHead tr{
     display:flex;
     flex-direction: column;
 }
 
-.SkillHead tr th{
+.SkillHead tr th, .SavingThrowsHead tr th, .MainHead tr th{
     display:flex;
     flex-direction: column;
+    justify-content: left;
+    border:outset;
 }
 
-.SkillBody tr td{
+.SkillBody tr td, .SavingThrowsBody tr td, .MainBody tr td{
     display:flex;
     flex-direction: column;
+    border:inset;
 }
 
 
