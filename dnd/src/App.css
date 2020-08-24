@@ -3,7 +3,24 @@
     margin: auto 50px;
 }
 
+.SkillTable table{
+    display:flex;
+ }
 
+.SkillHead tr{
+    display:flex;
+    flex-direction: column;
+}
+
+.SkillHead tr th{
+    display:flex;
+    flex-direction: column;
+}
+
+.SkillBody tr td{
+    display:flex;
+    flex-direction: column;
+}
 
 
 

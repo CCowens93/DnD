@@ -66,6 +66,54 @@ class wizard extends Component{
 
     let mainCharisma = "+1"
 
+    let savingThrowStrength = "+0"
+
+    let savingThrowDexterity = "+2"
+
+    let savingThrowConstitution = "-1"
+
+    let savingThrowIntelligence = "+5"
+
+    let savingThrowWisdom = "+4"
+
+    let savingThrowCharisma = "+1"
+
+    let skillAcrobatics = "+2"
+
+    let skillAnimalHandling = "+2"
+
+    let skillArcana = "+5"
+
+    let skillAthletics = "+0"
+
+    let skillDeception = "+1"
+
+    let skillHistory = "+5"
+
+    let skillInsight = "+4"
+
+    let skillIntimidation = "+1"
+
+    let skillInvestigation = "+5"
+
+    let skillMedicine = "+2"
+
+    let skillNature = "+3"
+
+    let skillPerception = "+2"
+
+    let skillPerformance = "+1"
+
+    let skillPersuasion = "+1"
+
+    let skillReligion = "+3"
+
+    let skillSleightOfHand = "+2"
+
+    let skillStealth = "+2"
+
+    let skillSurvival = "+2"
+
 
         return(
             <div>
@@ -113,7 +161,83 @@ class wizard extends Component{
                     </tbody>
              </table>
 
+            <h3>Saving Throws</h3>
+             <table>
+                    <thead>
+                            <tr>
+                                    <th>Strength</th>
+                                    <th>Dexterity</th>
+                                    <th>Constitution</th>
+                                    <th>Intelligence</th>
+                                    <th>Wisdom</th>
+                                    <th>Charisma</th>
+                            </tr>
+                    </thead>
+                    <tbody>
+                            <tr>
+                                <td>{savingThrowStrength}</td>
+                                <td>{savingThrowDexterity}</td>
+                                <td>{savingThrowConstitution}</td>
+                                <td>{savingThrowIntelligence}</td>
+                                <td>{savingThrowWisdom}</td>
+                                <td>{savingThrowCharisma}</td>
+                            </tr>
+                    </tbody>
+             </table>
 
+             <h3>Skills</h3>
+             <div className="SkillTable">
+                <table>
+             <div className="SkillHead">
+                    <thead>
+                        <tr>
+                                <th>Acrobatics</th>
+                                <th>Animal Handling</th>
+                                <th>Arcana</th>
+                                <th>Athletics</th>
+                                <th>Deception</th>
+                                <th>History</th>
+                                <th>Insight</th>
+                                <th>Intimidation</th>
+                                <th>Investigation</th>
+                                <th>Medicine</th>
+                                <th>Nature</th>
+                                <th>Perception</th>
+                                <th>Performance</th>
+                                <th>Persuasion</th>
+                                <th>Religion</th>
+                                <th>Sleight of Hand</th>
+                                <th>Stealth</th>
+                                <th>Survival</th>
+                        </tr>
+                    </thead>
+             </div>
+             <div className="SkillBody">
+                    <tbody>
+                        <tr>
+                                <td>{skillAcrobatics}</td>
+                                <td>{skillAnimalHandling}</td>
+                                <td>{skillArcana}</td>
+                                <td>{skillAthletics}</td>
+                                <td>{skillDeception}</td>
+                                <td>{skillHistory}</td>
+                                <td>{skillInsight}</td>
+                                <td>{skillIntimidation}</td>
+                                <td>{skillInvestigation}</td>
+                                <td>{skillMedicine}</td>
+                                <td>{skillNature}</td>
+                                <td>{skillPerception}</td>
+                                <td>{skillPerformance}</td>
+                                <td>{skillPersuasion}</td>
+                                <td>{skillReligion}</td>
+                                <td>{skillSleightOfHand}</td>
+                                <td>{skillStealth}</td>
+                                <td>{skillSurvival}</td>
+                        </tr>
+                    </tbody>
+             </div>
+             </table>
+             </div>
 
 
 
