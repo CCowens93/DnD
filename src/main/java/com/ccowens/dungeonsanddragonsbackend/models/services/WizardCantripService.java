@@ -7,7 +7,7 @@ import java.util.UUID;
 
 @Service
 public class WizardCantripService {
-    public WizardCantrip getWizardCantripByIdD(UUID id) {
+    public WizardCantrip getWizardCantripByID(UUID id) {
         WizardCantrip c = new WizardCantrip();
         c.setId(id);
         c.setCantrip("Acid Splash");

@@ -21,9 +21,8 @@ public class WizardCantripController {
     }
 
     @RequestMapping(value="/{wizardCantripID}", method = RequestMethod.GET)
-    public WizardCantrip getWizardCantrip (@PathVariable("wizardCantrip") UUID wizardCantripID){
-        WizardCantrip wizardCantrip = wizardCantripService.getWizardCantripByIdD(wizardCantripID);
+    public WizardCantrip getWizardCantrip (@PathVariable("wizardCantripID") UUID wizardCantripID){
 
-        return wizardCantrip;
+        return wizardCantripService.getWizardCantripByID(wizardCantripID);
     }
 }
