@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class DungeonsanddragonsbackendApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(DungeonsanddragonsbackendApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(DungeonsanddragonsbackendApplication.class, args);
+    }
 
 }
