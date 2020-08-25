@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 
-public class WizardController {
+public class HealthController {
     @RequestMapping(value = "/health", method = RequestMethod.GET)
     public String health() {
         // imagine the code checking a few things like the database
