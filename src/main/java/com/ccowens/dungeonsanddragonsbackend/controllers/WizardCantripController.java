@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.UUID;
+
 @RestController
 @RequestMapping("/wizard")
-
 public class WizardCantripController {
 
     private final WizardCantripService wizardCantripService;
@@ -21,8 +21,10 @@ public class WizardCantripController {
     }
 
     @RequestMapping(value="/{wizardCantripID}", method = RequestMethod.GET)
-    public WizardCantrip getWizardCantrip (@PathVariable("wizardCantripID") UUID wizardCantripID){
+    public WizardCantrip getWizardCantrip(@PathVariable("wizardCantripID") UUID wizardCantripID){
 
-        return wizardCantripService.getWizardCantripByID(wizardCantripID);
+        WizardCantrip wizardCantrip = wizardCantripService.getWizardCantripByID(wizardCantripID);
+
+        return wizardCantrip;
     }
 }

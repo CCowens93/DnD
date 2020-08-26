@@ -16,7 +16,8 @@ public class WizardCantripDAO {
     }
 
     public WizardCantrip getWizardCantripById(UUID id) {
-        return jdbcTemplate.queryForObject("select * from wizard_cantrip where id = ?", new Object[] { id }, new WizardCantripMapper());
+        return jdbcTemplate.queryForObject("select * from wizard_cantrips where id = ?", new Object[] { id }, new WizardCantripMapper());
     }
 }
+
 
